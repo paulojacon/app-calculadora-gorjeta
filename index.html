@@ -13,14 +13,15 @@
 </head>
 <body>
     <h3 class="titulo_principal">Calculadora de Gorjetas</h3>
-<div>
-    <div>
-        <div>
+<div class="container">
+    <div class="content">
+        <div class="content-esquerda">
             <div >
                 <label for="valor">Valor a pagar</label><br>
                 <input type="text" id="valor" value=" "><br>
-        
             </div>
+
+            <div>
                 <h5>Selecione a % </h5>
                     <div class="selecao_porc">
                         <button class="porcentagem" value="5">5%</button>
@@ -29,33 +30,30 @@
                         <button class="porcentagem" value="25">25%</button>
                         <button class="porcentagem" value="50">50%</button>
                     </div>
+            </div>
+            <div>
+                <label for="qtdPessoas">Numero de pessoa</label><br>
+                <input type="number" id="qtdPessoas">
+            </div>
         </div>
-        
-    </div>
-    <div>
-        <label for="qtdPessoas">Numero de pessoa</label><br>
-        <input type="number" id="qtdPessoas">
-    </div>
-</div>
-<div>
-    <div>
+    <div class="content-direita">
         <div>
-            <p>Valor da Gorjeta<br>
+            <div>
+                <p>Valor da Gorjeta<br>
                 <span>/ pessoa</span>
-            </p>
-            <input id="gorjeta-por-pessoa" type="text" placeholder="0" readonly>
+                </p>
+                <input id="gorjeta-por-pessoa" type="text" placeholder="0" readonly>
+            </div>
+            <div>
+                <p>Valor Total <br>
+                <span>/ pessoa</span>
+                </p>
+                <input id="total-gorjeta" type="text" placeholder="0">
+            </div>
         </div>
 
-        <div>
-            <p>Valor Total <br>
-            <span>/ pessoa</span>
-            </p>
-            <input id="total-gorjeta" type="text" placeholder="0">
-        </div>
-    </div>
-</div>
-    <div>
         <button id="limpar">Limpar</button>
+    </div>
     </div>
 </div>
 </body>
